@@ -1,0 +1,319 @@
+p{
+	font-size: 16px;
+	font-family: "Roboto", sans-serif;
+}
+
+
+h1{
+	font-family: "Anton", sans-serif;
+}
+
+h2{
+	font-family: "Anton", sans-serif;
+}
+
+h3{
+	font-family: "Anton", sans-serif;
+}
+
+@media(max-width: 767px) {
+
+
+	.image-wrapper{
+		flex: none;
+		width: 100%;
+	}
+
+	.col-4 h2{
+		flex-direction: column;
+		display: block;
+	}
+
+
+
+
+}
+
+/*HEADER CSS***/
+.port-main-nav img{
+	height:50px;
+	max-width:100%;
+	float: left;
+}
+
+.port-main-nav ul{
+	display: flex;
+	float: right;
+	list-style: none;
+}
+
+header.port-header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 15px 0;
+
+}
+
+header a{
+	margin: 0 10px;
+	text-decoration: none;
+	color: black;
+}
+
+header a:hover{
+	text-decoration: underline;
+}
+
+/******/
+/*HOMEPAGE CSS***/
+
+.headshot{
+height: auto;
+width: 100%;
+display: block;
+margin: auto;
+}
+
+.btn-custom a{
+	display: flex;
+	justify-content: center;
+}
+
+.btn-custom{
+	background-color: #0DB3FF !important;
+	transform: color 0.2s ease!important;
+	text-decoration: none;
+	border: 2px solid black !important;
+
+}
+
+.btn-custom:hover{
+	background-color: white !important;
+	border: 2px solid #0DB3FF!important;
+}
+
+.port-hero-button{
+	padding: 20px 0px;
+	font-family: "Anton", sans-serif;
+}
+
+/*FOOTER CSS***/
+
+.port-footer{
+	padding-top: 20px;
+}
+
+.port-footer img{
+	height: 20px;
+	width: 20px;
+	margin: 16px;
+	display: flex;
+}
+
+.grow{
+	transition: transform 0.2s ease-in-out;
+}
+
+.grow:hover{
+	transform: scale(1.2);
+	cursor: pointer;
+}
+
+.port-footer ul{
+	list-style: none;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+/******/
+/*PORTFOLIO PORTAL PAGE*/
+
+.port-p-hero h1, .port-p-hero h2, .port-p-hero p{
+	display: grid;
+	place-items: center;
+}
+
+
+.preview-row{
+	display: flex;
+}
+
+.image-wrapper {
+	flex: 1;
+	position: relative;
+	display: inline-block;
+	margin: 10px;
+	border: 3px solid black;
+	border-radius: 7px;
+}
+
+.image-wrapper::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(13, 179, 255, 1.0);
+	pointer-events: none;
+	opacity: 1;
+	transition: opacity 0.3s;
+	border-radius: 5px;
+}
+
+.image-wrapper:hover::after{
+	opacity: 0.5;
+}
+
+.port-p-previews img{
+	width: 100%;
+	max-height: auto;
+	display: block;
+	object-fit: cover;
+	border-radius: 5px;
+	border: #0DB3FF solid 3px;
+}
+
+
+.col-4 h2{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 50%;
+ 	left: 50%;
+  	transform: translate(-50%, -50%);
+  	z-index: 2;
+}
+
+/*WDESIGN PAGE*/
+
+.design-hero h1, .design-hero p{
+	display: flex;
+	justify-content: center;
+}
+
+.design-hero{
+	margin-bottom: 20px;
+}
+
+.design-portals h2{
+	justify-content: left;
+}
+
+.design-portals img{
+	max-inline-size: 100%;
+	height: auto;
+	object-fit: cover;
+	display: block;
+	justify-content: center;
+	border: 2px solid black;
+	border-radius: 5px;
+	object-position: center;
+	aspect-ratio: 3/2;
+}
+
+.design_button{
+	font-family: "Anton", sans-serif;
+}
+
+.col-md-5{
+	margin-bottom: 20px;
+}
+
+.col-md-7{
+	margin-bottom: 40px;
+}
+
+/*DESIGN PAGES*/
+
+.design-info ul{
+	list-style-position: inside;
+	padding-left: 10;
+}
+
+.carousel{
+	width: 100%;
+	height: 400px;
+	display: block;
+	justify-content: center;
+	border: 2px solid black;
+	border-radius: 5px;
+	object-position: center;
+	overflow: auto;
+}
+
+.c-img{
+	height: 100%;
+	object-fit: cover;
+}
+
+.draft img{
+	width: 100%;
+	height: auto;
+	display: block;
+	justify-content: center;
+	object-position: center;
+}
+
+.overflow{
+	width:100%;
+	height: 400px;
+	overflow-y: auto;
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+	filter: invert(100%);
+}
+
+.sketch{
+	height: 400px;
+	width: 100%;
+	object-fit: cover;
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+/*CONTACT PAGE*/
+.contact-info ul{
+	list-style: none;
+	align-items: center;
+	gap: 20px;
+}
+
+.email, .linkedin{
+	height: 50px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.phone{
+	height: 75px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.contact-header h1, .contact-header p{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact-info h3{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact-info a{
+	color: black;
+}
