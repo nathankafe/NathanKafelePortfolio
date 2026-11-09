@@ -19,18 +19,22 @@ h3{
 @media(max-width: 767px) {
 
 
-	.image-wrapper{
-		flex: none;
+	.image-wrapper, .image-wrapper img{
 		width: 100%;
-	}
-
-	.col-4 h2{
-		flex-direction: column;
 		display: block;
+		max-height: 200px;
+		overflow: hidden;
 	}
 
+	.col-md-4{
+		margin-left: -10px;
+	}
 
-
+	.image-wrapper h2{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
 }
 
@@ -168,7 +172,6 @@ margin: auto;
 
 .port-p-previews img{
 	width: 100%;
-	max-height: auto;
 	display: block;
 	object-fit: cover;
 	border-radius: 5px;
@@ -176,7 +179,7 @@ margin: auto;
 }
 
 
-.col-4 h2{
+.col-md-4 h2{
 	position: relative;
 	display: flex;
 	justify-content: center;
